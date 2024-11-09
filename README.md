@@ -1,2 +1,4 @@
-# llm_endpoint
-FastAPI server for RAG project. Exposes endpoint for calling LLM inference running on my PC with GPU's.
+# llm_api
+FastAPI server for RAG project. Contains API for calling LLM inference running on my PC with GPU's.
+
+Will run on port 5001
