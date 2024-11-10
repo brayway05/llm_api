@@ -3,6 +3,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 ENV PYTHONPATH=/app
+ENV HUGGINGFACE_TOKEN="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"
 
 COPY requirements.txt .
 

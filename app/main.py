@@ -27,7 +27,7 @@ class LLMResponse(BaseModel):
 @app.on_event("startup")
 def startup_event():
     print(f"Starting up with default model {MODEL_NAME}...")
-    login(huggingface_token=HUGGINGFACE_TOKEN)
+    login(HUGGINGFACE_TOKEN)
 
     get_model()
     print("Model is ready and cached!")
