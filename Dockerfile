@@ -1,9 +1,15 @@
-FROM python:3.10-slim
+FROM python:3.10
 
 WORKDIR /app
 
 ENV PYTHONPATH=/app
+<<<<<<< HEAD
 ENV HUGGINGFACE_TOKEN="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"
+=======
+
+ARG HUGGINGFACE_TOKEN
+ENV HUGGINGFACE_TOKEN=${HUGGINGFACE_TOKEN}
+>>>>>>> accea9112dc7623789db631088af8685ee87d0a8
 
 COPY requirements.txt .
 
